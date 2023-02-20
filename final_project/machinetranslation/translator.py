@@ -11,9 +11,9 @@ url = os.getenv('url')
 
 authenticator = IAMAuthenticator(apikey)
 translator = LanguageTranslatorV3(
-    version='2018-05-01',
-    authenticator=authenticator
-)
+               version='2018-05-01',
+               authenticator=authenticator
+               )
 translator.set_service_url(url)
 
 def english_to_french(english_text):
